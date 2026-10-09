@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Palcazu Travel — Boletos digitales</title>
+<title>Palcazu Travel | Encuentra tu próximo viaje</title>
 <style>
   :root{
     --blue:#0879c9;
@@ -167,6 +167,66 @@
     .preview-wrap{animation:none}
     .ticket{box-shadow:none;border:1px solid #bbb;max-width:850px;margin:0 auto}
   }
+
+  .main-nav{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:-5px 0 24px;padding:9px;background:rgba(255,255,255,.78);border:1px solid #d6eaf4;border-radius:16px;box-shadow:0 8px 25px rgba(12,70,105,.06)}
+  .main-nav a{color:#24536e;text-decoration:none;font-size:12px;font-weight:800;padding:10px 13px;border-radius:10px;transition:.2s}
+  .main-nav a:hover{background:#e5f5fd;color:#0879c9}
+  .main-nav .nav-cta{margin-left:auto;background:#0879c9;color:#fff}
+  .hero{position:relative;isolation:isolate;overflow:hidden;min-height:390px;display:flex;align-items:center;padding:42px;margin-bottom:24px;border-radius:26px;color:#fff;box-shadow:0 22px 45px rgba(8,48,62,.18);background:linear-gradient(90deg,rgba(7,35,42,.88) 0%,rgba(7,46,53,.68) 47%,rgba(7,46,53,.08) 100%),url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1800&q=85') center 52%/cover no-repeat,#285d60}
+  .hero:after{content:'';position:absolute;z-index:-1;inset:0;background:linear-gradient(0deg,rgba(7,35,42,.24),transparent 55%)}
+  .hero-copy{max-width:650px}
+  .hero-kicker{font-size:10px;font-weight:900;letter-spacing:2px;text-transform:uppercase;color:#d8f2e5}
+  .hero h2{font-family:Georgia,'Times New Roman',serif;font-weight:500;font-size:clamp(36px,5.4vw,62px);line-height:1.02;letter-spacing:-1.5px;max-width:620px;margin:15px 0}
+  .hero p{max-width:520px;color:#f0f6f3;font-size:15px;line-height:1.8;margin:0 0 23px}
+  .hero-footnote{font-size:11px;color:#e4eee9;margin-top:18px}
+  .hero-actions{display:flex;gap:10px;flex-wrap:wrap}
+  .hero-actions a{display:inline-flex;align-items:center;justify-content:center;padding:12px 17px;border-radius:12px;text-decoration:none;font-size:13px;font-weight:900;background:#fff;color:#07558e}
+  .hero-actions a.outline{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.4);color:#fff}
+  .trust-row{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin:0 0 30px}
+  .trust-item{padding:17px 18px;background:rgba(255,255,255,.8);border:1px solid #d9ebf3;border-radius:17px}
+  .trust-icon{font-size:22px;margin-bottom:8px}.trust-item strong{display:block;font-size:13px;margin-bottom:4px}.trust-item span{font-size:11px;color:#718997;line-height:1.5}
+  .section-block{margin:34px 0 0;scroll-margin-top:20px}
+  .section-heading{margin-bottom:17px}.eyebrow{font-size:10px;letter-spacing:1.8px;text-transform:uppercase;font-weight:900;color:#0879c9}.section-heading h2{font-size:25px;letter-spacing:-.6px;margin:6px 0}.section-heading p{font-size:13px;line-height:1.65;color:#6c8292;margin:0;max-width:650px}
+  .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .feature-card{padding:21px;border:1px solid #d7e9f2;border-radius:19px;background:rgba(255,255,255,.86);box-shadow:0 10px 28px rgba(12,70,105,.06);transition:transform .2s,box-shadow .2s}
+  .feature-card:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(12,70,105,.1)}
+  .feature-card .icon{width:43px;height:43px;border-radius:13px;background:#e5f5fd;display:grid;place-items:center;font-size:21px;margin-bottom:13px}.feature-card h3{font-size:15px;margin:0 0 8px}.feature-card p{font-size:12px;line-height:1.65;color:#6c8292;margin:0}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.step{display:flex;gap:12px;padding:17px;background:#fff;border:1px solid #d7e9f2;border-radius:16px}.step-num{flex:0 0 32px;height:32px;border-radius:50%;display:grid;place-items:center;background:#0879c9;color:#fff;font-weight:900}.step strong{display:block;font-size:13px;margin:2px 0 5px}.step p{font-size:11px;line-height:1.55;color:#6c8292;margin:0}
+  .about-band{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;padding:26px;border-radius:22px;background:#e8f6fd;border:1px solid #cce8f5}.about-band h3{margin:0 0 9px;font-size:20px}.about-band p{margin:0;color:#58788b;font-size:13px;line-height:1.75}.about-points{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-content:center}.about-points span{padding:12px;background:rgba(255,255,255,.8);border-radius:12px;font-size:12px;font-weight:800}
+  .faq-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}.faq{padding:18px;background:#fff;border:1px solid #d7e9f2;border-radius:16px}.faq h3{font-size:13px;margin:0 0 7px}.faq p{font-size:12px;color:#6c8292;line-height:1.65;margin:0}
+  .site-footer{margin-top:38px;padding:22px 5px 0;border-top:1px solid #d5e7f0;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:#718997;font-size:11px}.site-footer strong{color:#24536e}
+
+  .plan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+  .plan-card{position:relative;display:flex;flex-direction:column;min-height:265px;padding:24px;border:1px solid #dce6df;border-radius:18px;background:#fff;box-shadow:0 10px 26px rgba(31,66,52,.05)}
+  .plan-featured{border-color:#789b83;box-shadow:0 15px 35px rgba(39,89,62,.11)}
+  .plan-tag{align-self:flex-start;padding:6px 9px;border-radius:99px;background:#edf4ee;color:#426a50;font-size:10px;font-weight:800;letter-spacing:.3px}
+  .plan-card h3{font-family:Georgia,'Times New Roman',serif;font-size:25px;font-weight:500;margin:17px 0 9px;color:#243d32}
+  .plan-card p{font-size:12px;line-height:1.7;color:#6a7c72;margin:0 0 18px}
+  .plan-price{font-size:13px;font-weight:850;color:#315f45;margin-top:auto;padding:14px 0;border-top:1px solid #e6eee8}
+  .plan-link{display:flex;justify-content:space-between;align-items:center;text-decoration:none;color:#315f45;font-size:12px;font-weight:900;padding-top:9px}
+  .pricing-note{font-size:11px;color:#718176;line-height:1.7;margin:13px 2px 0}
+  .destination-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .destination-card{position:relative;min-height:270px;border-radius:18px;overflow:hidden;background-size:cover;background-position:center;isolation:isolate}
+  .destination-card:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(14,35,28,.86),rgba(14,35,28,.03) 80%)}
+  .destination-one{background-image:url('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=80')}
+  .destination-two{background-image:url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80')}
+  .destination-three{background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80')}
+  .destination-overlay{position:absolute;left:19px;right:19px;bottom:18px;color:#fff}
+  .destination-overlay span{font-size:9px;letter-spacing:1.7px;font-weight:900;color:#d4e7d8}
+  .destination-overlay h3{font-family:Georgia,'Times New Roman',serif;font-weight:500;font-size:25px;margin:8px 0}
+  .destination-overlay p{font-size:11px;line-height:1.55;color:#e7eee9;margin:0}
+  .contact-panel{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;padding:30px;border-radius:22px;background:#203e32;color:white}
+  .contact-panel .eyebrow{color:#b9d7c1}.contact-panel h2{font-family:Georgia,'Times New Roman',serif;font-weight:500;font-size:31px;margin:8px 0 10px}.contact-panel p{color:#d5e2d9;font-size:13px;line-height:1.8;margin:0;max-width:600px}
+  .contact-checklist{align-self:center;display:grid;gap:10px;padding:19px;border-radius:14px;background:rgba(255,255,255,.08);font-size:12px;color:#e0eae3}.contact-checklist strong{color:white;margin-bottom:3px}
+  .main-nav{border-radius:12px;box-shadow:none;background:#fff;border-color:#e1e8e2}
+  .main-nav a{color:#465d50}.main-nav a:hover{background:#edf4ee;color:#315f45}.main-nav .nav-cta{background:#315f45;color:#fff}
+  .eyebrow{color:#537e5f}.trust-item{border-color:#e0e9e2;box-shadow:none}.trust-icon{background:#eaf2eb;color:#315f45;width:40px;height:40px;display:grid;place-items:center;border-radius:12px;font-size:17px;font-weight:900}.feature-card{box-shadow:none}
+  .site-footer{border-color:#e0e9e2}.site-footer strong{color:#315f45}
+  .valid{color:#8a7652}
+
+  @media(max-width:700px){.hero{min-height:440px;padding:28px 22px}.hero h2{font-size:42px}.plan-grid,.destination-grid{grid-template-columns:1fr}.destination-card{min-height:230px}.contact-panel{grid-template-columns:1fr}.hero{background-position:58% center}.hero:after{right:-10px;font-size:100px}.trust-row,.feature-grid,.steps{grid-template-columns:1fr}.about-band{grid-template-columns:1fr}.faq-list{grid-template-columns:1fr}.main-nav{gap:3px}.main-nav a{padding:9px 8px;font-size:11px}.main-nav .nav-cta{margin-left:0}.trust-item{display:grid;grid-template-columns:38px 1fr;column-gap:9px}.trust-icon{grid-row:span 2;margin:0}.trust-item strong{align-self:end}}
+  @media print{.main-nav,.hero,.trust-row,.section-block,.site-footer{display:none!important}}
+
 </style>
 </head>
 <body>
@@ -176,19 +236,36 @@
       <div class="brand-mark">✈</div>
       <div>
         <h1>Palcazu Travel</h1>
-        <div class="subtitle">Generador de boletos de viaje</div>
+        <div class="subtitle">Viajes, ideas y atención personalizada</div>
       </div>
     </div>
-    <div class="badge">BOLETO DIGITAL</div>
+    <div class="badge">DESCUBRE TU PRÓXIMO DESTINO</div>
   </header>
+  <nav class="main-nav" aria-label="Menú principal">
+    <a href="index.html">Inicio</a><a href="planes.html">Planes y precios</a><a href="destinos.html">Destinos</a><a href="nosotros.html">Nosotros</a><a href="preguntas.html">Preguntas frecuentes</a><a href="#crear">Pase digital</a><a class="nav-cta" href="contacto.html">Consultar un viaje ↗</a>
+  </nav>
+  <section class="hero" id="inicio">
+    <div class="hero-copy">
+      <div class="hero-kicker">PALCAZU TRAVEL · TU PRÓXIMO VIAJE EMPIEZA AQUÍ</div>
+      <h2>Hay lugares que merecen descubrirse.</h2>
+      <p>Encuentra ideas para tu próximo viaje, conoce las opciones disponibles y consulta los detalles sin complicarte. Te ayudamos a dar el primer paso.</p>
+      <div class="hero-actions"><a href="planes.html">Explorar planes <span aria-hidden="true">↗</span></a><a class="outline" href="contacto.html">Hablar con nosotros</a></div>
+      <div class="hero-footnote">Planes, disponibilidad y tarifas: consulta antes de organizar tu viaje.</div>
+    </div>
+  </section>
+  <div class="trust-row">
+    <div class="trust-item"><div class="trust-icon">⌕</div><strong>Encuentra una opción</strong><span>Revisa las alternativas y dinos qué tipo de viaje tienes en mente.</span></div>
+    <div class="trust-item"><div class="trust-icon">S/</div><strong>Consulta el precio</strong><span>Solicita información actualizada antes de tomar una decisión.</span></div>
+    <div class="trust-item"><div class="trust-icon">♡</div><strong>Organiza con calma</strong><span>Resuelve tus dudas y confirma los detalles directamente.</span></div>
+  </div>
 
   <div id="publicVerification" class="verify-wrap" style="display:none">
     <div class="verify-head">
       <div>
-        <h2>Verificación pública del boleto</h2>
+        <h2>Consulta de información del pase</h2>
         <div class="subtitle">Palcazu Travel</div>
       </div>
-      <div class="verify-ok">✓ BOLETO VÁLIDO</div>
+      <div class="verify-ok">INFORMACIÓN DEL PASE</div>
     </div>
     <div class="verify-grid">
       <div class="verify-data">
@@ -202,35 +279,35 @@
       </div>
       <div class="verify-code">
         <img id="verifyQr" alt="Código QR del boleto" style="width:190px;height:190px;display:block">
-        <b>Escaneo verificado</b>
+        <b>Datos del pase</b>
       </div>
     </div>
-    <div class="verify-note">Esta información es visible públicamente para cualquier persona que escanee el código del boleto.</div>
+    <div class="verify-note">La información incluida en este enlace puede verla cualquier persona que lo reciba. Este pase digital no confirma por sí solo una reserva ni un pago.</div>
     <a class="back-link" href="./">← VOLVER A PALCAZU TRAVEL</a>
   </div>
 
   <div class="layout">
-    <section class="panel">
-      <h2>Datos del pasajero</h2>
-      <p>Completa la información y genera tu boleto.</p>
+    <section class="panel" id="crear">
+      <h2>Consulta de pase digital</h2>
+      <p>Esta herramienta sirve para preparar una vista previa del pase. La reserva de un servicio debe confirmarse directamente con la empresa.</p>
 
       <label for="passenger">Nombre del pasajero</label>
-      <input id="passenger" value="Henry Fernando Westreicher Villano">
+      <input id="passenger" placeholder="Nombre completo del pasajero">
 
       <label for="destination">Destino</label>
-      <input id="destination" value="Alto Izco">
+      <input id="destination" placeholder="Destino del viaje">
 
       <label>Fecha y horario</label>
-      <input id="date" value="Martes 11 de septiembre de 2001">
+      <input id="date" placeholder="Ej. sábado 24 de octubre">
 
       <div class="two">
         <div>
           <label for="departure">Salida</label>
-          <input id="departure" value="8:46 a. m.">
+          <input id="departure" placeholder="Hora de salida">
         </div>
         <div>
           <label for="arrival">Llegada</label>
-          <input id="arrival" value="9:03 a. m.">
+          <input id="arrival" placeholder="Hora de llegada">
         </div>
       </div>
 
@@ -264,27 +341,27 @@
             <div class="car">🚙</div>
             <div class="route-line"></div>
             <div class="pin">📍</div>
-            <div class="destination" id="outDestination">Alto Izco</div>
+            <div class="destination" id="outDestination">Tu destino</div>
           </div>
 
           <div class="fields">
             <div class="field">
               <div class="label">Día</div>
-              <div class="value" id="outDate">Martes 11 de septiembre de 2001</div>
+              <div class="value" id="outDate">Fecha por definir</div>
             </div>
             <div class="field">
               <div class="label">Salida</div>
-              <div class="value" id="outDeparture">8:46 a. m.</div>
+              <div class="value" id="outDeparture">Por confirmar</div>
             </div>
             <div class="field">
               <div class="label">Llegada</div>
-              <div class="value" id="outArrival">9:03 a. m.</div>
+              <div class="value" id="outArrival">Por confirmar</div>
             </div>
           </div>
 
           <div class="passenger">
             <small>Pasajero</small>
-            <strong id="outPassenger">Henry Fernando Westreicher Villano</strong>
+            <strong id="outPassenger">Nombre del pasajero</strong>
           </div>
 
           <div class="barcode-box">
@@ -297,7 +374,7 @@
 
           <div class="ticket-footer">
             <span>Código: <b id="outCode">PCZ-7K4M9X</b></span>
-            <span class="valid">✓ BOLETO VÁLIDO</span>
+            <span class="valid">VISTA PREVIA</span>
           </div>
         </div>
 
@@ -306,9 +383,19 @@
           <div class="side-car">🚙</div>
         </div>
       </div>
-      <div class="help">Presenta este boleto junto con tu código de reserva. Escanea el QR para verificarlo.</div>
+      <div class="help">Vista previa ilustrativa. Un código generado aquí no confirma por sí solo una reserva, un pago ni un asiento.</div>
     </section>
   </div>
+
+  <section class="section-block" id="explora">
+    <div class="section-heading"><div class="eyebrow">Sigue explorando</div><h2>Encuentra la información que necesitas</h2><p>Conoce las opciones, inspírate con destinos y descubre más sobre Palcazu Travel en nuestras páginas.</p></div>
+    <div class="plan-grid">
+      <article class="plan-card"><div class="plan-tag">Opciones</div><h3>Planes y precios</h3><p>Revisa las modalidades de consulta y solicita una cotización según tu viaje.</p><a href="planes.html" class="plan-link">Ver planes ↗</a></article>
+      <article class="plan-card"><div class="plan-tag">Inspiración</div><h3>Destinos</h3><p>Explora ideas para tu próxima salida y consulta qué opciones están disponibles.</p><a href="destinos.html" class="plan-link">Explorar destinos ↗</a></article>
+      <article class="plan-card"><div class="plan-tag">Información</div><h3>Conócenos</h3><p>Descubre nuestra forma de presentar opciones e información para viajar.</p><a href="nosotros.html" class="plan-link">Sobre Palcazu Travel ↗</a></article>
+    </div>
+  </section>
+  <footer class="site-footer"><span><strong>✦ Palcazu Travel</strong> · Tu próximo viaje empieza aquí.</span><span>Consulta rutas, opciones y tarifas antes de confirmar.</span></footer>
 </div>
 
 <script>
@@ -488,7 +575,7 @@ function downloadTicket(){
     <g transform="translate(315 380) scale(1.36 .98)">${barcode}</g>
 
     <text x="315" y="490" fill="#7390a0" font-family="Arial,sans-serif" font-size="13">Código: <tspan font-weight="900" fill="#18334a">${xmlEscape(code)}</tspan></text>
-    <text x="995" y="490" text-anchor="end" fill="#0879c9" font-family="Arial,sans-serif" font-size="13" font-weight="900">✓ BOLETO VÁLIDO</text>
+    <text x="995" y="490" text-anchor="end" fill="#0879c9" font-family="Arial,sans-serif" font-size="13" font-weight="900">INFORMACIÓN DEL PASE</text>
 
     <rect x="1077" y="55" width="78" height="500" rx="0" fill="url(#blue)"/>
     <g transform="translate(1116 310) rotate(90)">
@@ -546,6 +633,10 @@ function showPublicTicket(){
     document.getElementById("publicVerification").style.display="block";
     document.querySelector("header").style.display="none";
     document.querySelector(".layout").style.display="none";
+    document.querySelector(".main-nav").style.display="none";
+    document.querySelector(".hero").style.display="none";
+    document.querySelector(".trust-row").style.display="none";
+    document.querySelectorAll(".section-block,.site-footer").forEach(el=>el.style.display="none");
     document.getElementById("verifyPassenger").textContent=d.passenger||"—";
     document.getElementById("verifyDestination").textContent=d.destination||"—";
     document.getElementById("verifyCompany").textContent=d.company||"—";
@@ -554,7 +645,7 @@ function showPublicTicket(){
     document.getElementById("verifyArrival").textContent=d.arrival||"—";
     document.getElementById("verifyCode").textContent=d.code||"—";
     renderQr("verifyQr",location.href);
-    document.title="Verificación de boleto — "+(d.code||"Palcazu Travel");
+    document.title="Consulta de pase — "+(d.code||"Palcazu Travel");
     return true;
   }catch(e){
     return false;
@@ -562,12 +653,20 @@ function showPublicTicket(){
 }
 
 function generateTicket(){
+  const passenger=document.getElementById("passenger").value.trim();
+  const destination=document.getElementById("destination").value.trim();
+  const status=document.getElementById("downloadStatus");
+  if(!passenger || !destination){
+    status.textContent="Completa el nombre del pasajero y el destino para preparar la vista previa.";
+    document.getElementById(!passenger?"passenger":"destination").focus();
+    return;
+  }
   const data={
-    passenger:document.getElementById("passenger").value.trim() || "Pasajero",
-    destination:document.getElementById("destination").value.trim() || "Destino",
-    date:document.getElementById("date").value.trim() || "Fecha",
-    departure:document.getElementById("departure").value.trim() || "--",
-    arrival:document.getElementById("arrival").value.trim() || "--",
+    passenger,
+    destination,
+    date:document.getElementById("date").value.trim() || "Fecha por definir",
+    departure:document.getElementById("departure").value.trim() || "Por confirmar",
+    arrival:document.getElementById("arrival").value.trim() || "Por confirmar",
     company:document.getElementById("company").value.trim() || "PALCAZU TRAVEL"
   };
   document.getElementById("outPassenger").textContent=data.passenger;
@@ -577,9 +676,9 @@ function generateTicket(){
   document.getElementById("outArrival").textContent=data.arrival;
   document.getElementById("outCompany").textContent=data.company.toUpperCase();
   randomCode();
-
+  status.textContent="Vista previa actualizada. Esto no confirma una reserva real.";
   const ticket=document.getElementById("ticket");
-  ticket.animate([
+  if(ticket.animate) ticket.animate([
     {transform:"scale(.985)",opacity:.75},
     {transform:"scale(1.01)",opacity:1},
     {transform:"scale(1)",opacity:1}
