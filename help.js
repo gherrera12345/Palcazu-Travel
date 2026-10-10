@@ -198,7 +198,7 @@
     activeRequest = request;
     const timer = setTimeout(() => { request.timedOut = true; request.controller.abort(); }, 25000);
     try {
-      const response = await fetch('/api/assistant', {
+      const response = await fetch('https://red-star-3179.tramitesvechiculares25.workers.dev/', {
         method: 'POST', credentials: 'same-origin', headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({messages}), signal: request.controller.signal
       });
