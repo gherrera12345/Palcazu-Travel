@@ -131,7 +131,7 @@
       const timer = setTimeout(() => controller.abort(), 4500);
       try {
         if (!/^https?:$/.test(location.protocol)) throw new Error('offline');
-        const response = await fetch('https://red-star-3179.tramitesvechiculares25.workers.dev//status', {signal: controller.signal, cache: 'no-store', credentials: 'same-origin'});
+        const response = await fetch('https://red-star-3179.tramitesvechiculares25.workers.dev', {signal: controller.signal, cache: 'no-store', credentials: 'same-origin'});
         if (!response.ok) throw new Error('unavailable');
         const status = await response.json();
         aiAvailable = status.available === true;
