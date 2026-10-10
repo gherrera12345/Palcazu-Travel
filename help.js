@@ -124,7 +124,25 @@
   const tabs = $$('.help-tabs [role="tab"]');
   const availability = $('#assistant-availability');
   let availabilityPromise = null, aiAvailable = false;
-  const checkAvailability = () => {
+  const checkAvailability = async () => {
+  try {
+    const response = await fetch(
+      'https://red-star-3179.tramitesvehiculares25.workers.dev'
+    );
+
+    aiAvailable = response.ok;
+  } catch {
+    aiAvailable = false;
+  }
+
+  availability.textContent = aiAvailable
+    ? 'Asistente IA disponible'
+    : 'Chat IA pendiente de habilitación';
+
+  availability.classList.toggle('available', aiAvailable);
+  $('#assistant-connected').hidden = !aiAvailable;
+  $('#assistant-unavailable').hidden = aiAvailable;
+};
     if (availabilityPromise) return availabilityPromise;
     availabilityPromise = (async () => {
       const controller = new AbortController();
