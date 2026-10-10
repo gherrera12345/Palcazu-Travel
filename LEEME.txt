@@ -1,23 +1,59 @@
-PALCAZU TRAVEL — EDICIÓN PREMIUM
+PALCAZU TRAVEL — EDICIÓN PALCAZÚ
 
-ARCHIVOS
-- index.html: inicio
-- destinos.html: ideas de destinos con filtros
-- experiencias.html: tipos de experiencia
-- nosotros.html: filosofía y turismo responsable
-- contacto.html: formulario que prepara un correo en la aplicación del visitante
-- preguntas.html: preguntas frecuentes
-- styles.css: estilos compartidos y diseño adaptable a celular
-- script.js: menú móvil, filtros, preguntas desplegables y efectos de entrada
+WEB ESTÁTICA EN HTML, CSS Y JAVASCRIPT
+Descomprime el ZIP y abre index.html. Para publicar en GitHub Pages u otro alojamiento estático, sube todo el contenido a la raíz, incluyendo assets. No requiere instalación ni compilación. Fotografías y fuentes incluidas.
 
-PUBLICAR EN GITHUB PAGES
-1. Descomprime el ZIP.
-2. Sube todos los archivos anteriores directamente a la raíz del repositorio (no dentro de una carpeta).
-3. Asegúrate de que el archivo principal se llame exactamente index.html.
-4. Haz Commit changes. Espera unos minutos y abre tu URL de GitHub Pages.
+PÁGINAS
+index.html: inicio
+destinos.html: catálogo con búsqueda y filtros
+planes.html: ideas de recorrido
+palcazu.html: territorio, Iscozacín, cascadas, cultura Yánesha y mirador
+pampa-limena.html: fundo Pampa Limeña
+yanachaga.html: parque nacional y sector Paujil
+biodiversidad.html: fauna documentada y fotografías ampliables
+guia.html: preparación del viaje
+experiencias.html: intereses de viaje
+nosotros.html: enfoque de Palcazu Travel
+contacto.html: idea de viaje, datos personales, revisión, copia y descarga de solicitudes
+preguntas.html: preguntas frecuentes
+fuentes.html: investigación, fuentes y criterios
 
-IMPORTANTE
-- Las fotos se cargan desde Unsplash y las tipografías desde Google Fonts; requieren conexión a internet.
-- No se han inventado precios, teléfonos, correos empresariales ni servicios confirmados. Las tarjetas son ideas visuales y deben verificarse antes de vender un paquete.
-- GitHub Pages sirve páginas estáticas. El formulario abre el correo del visitante y no guarda datos ni confirma reservas.
-- Antes de usar comercialmente, añade los datos reales de contacto, servicios, precios, políticas y permisos correspondientes.
+PERSONALIZAR
+Los textos se editan en los HTML, los estilos en styles.css y las interacciones en script.js. Las animaciones respetan la preferencia de movimiento reducido.
+
+ESTADO
+Investigación consultada el 9 de octubre de 2026. Se incorporaron las siete fotografías aportadas. Consultar fuentes.html y CREDITOS.txt para procedencia y límites de identificación.
+Los planes son ideas de recorrido; faltan tarifas y canales oficiales de Palcazu Travel. El formulario no envía solicitudes automáticamente ni confirma reservas. Las condiciones del fundo y del parque deben coordinarse por separado.
+El generador de boletos no estaba incluido en los archivos originales y no forma parte de esta web corporativa.
+
+
+REVISIÓN DEL DISEÑO — 9 OCTUBRE 2026
+- Portada y navegación con composición más contenida.
+- Imágenes con dimensiones reales y proporciones completas.
+- Dieciséis fotografías únicas: cada imagen aparece en una sola página.
+- Galería ampliable con cierre por botón o Escape y retorno del foco.
+- Los créditos de imágenes y las fuentes se consultan en fuentes.html.
+- HTML, CSS y JavaScript locales; sin frameworks ni proceso de instalación.
+
+GUÍA DE COMPOSICIÓN
+Se tomaron las capturas de referencia para reforzar la jerarquía, los espacios, las tarjetas y la comodidad de los controles. Se conservaron la identidad verde de Palcazu Travel y sus fotografías locales. El selector del inicio lleva al formulario con el interés elegido; no consulta disponibilidad ni confirma reservas.
+
+INTERFAZ — 10 OCTUBRE 2026
+- Menú móvil con acceso visible a Mi viaje y navegación secundaria.
+- Búsqueda de destinos compatible con tildes, categorías combinables y estado sin resultados.
+- Solicitud en tres pasos: Tu viaje, Tus datos y Revisión.
+- Fechas y presupuesto opcionales, errores junto al campo y resumen antes de copiar.
+- Volver y editar conservan los datos durante la consulta.
+- Atajos en Planes y orientación de lectura en la Guía.
+- Controles cómodos, foco visible, lectura más clara y estilos consolidados.
+- El formulario no guarda datos personales ni envía consultas automáticamente.
+
+ACTUALIZACIÓN — 10 OCTUBRE 2026
+- Portada con más contraste, accesos directos y tarjetas fotográficas.
+- Cinco fotografías nuevas de lugares documentados en MINCETUR, sin repetir imágenes en las páginas.
+- Búsqueda general, navegación Más y centro de ayuda en ayuda.html.
+- Guía rápida local: búsqueda de respuestas verificadas; funciona sin IA.
+- Asistente IA: conversación con historial temporal, estados de carga y errores, detener y reintentar. Su activación requiere configurar OPENAI_API_KEY en el servidor. No es un chatbot simulado.
+- El HTML, CSS y JavaScript del sitio se mantienen sin frameworks. El servidor del sitio alojado aporta exclusivamente la conexión segura con la IA.
+- Para usar el ZIP en un alojamiento estático, abre index.html y sube los archivos a la raíz. La guía y la búsqueda siguen disponibles; el chat requiere el servidor.
+- Consulta INTEGRACION-IA.md para el contrato de integración y los límites verificados.
