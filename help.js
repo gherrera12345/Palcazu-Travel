@@ -132,9 +132,7 @@
       try {
         if (!/^https?:$/.test(location.protocol)) throw new Error('offline');
         const response = await fetch('https://red-star-3179.tramitesvechiculares25.workers.dev', {signal: controller.signal, cache: 'no-store', credentials: 'same-origin'});
-        if (!response.ok) throw new Error('unavailable');
-        const status = await response.json();
-        aiAvailable = status.available === true;
+       aiAvailable = response.ok;
       } catch { aiAvailable = false; }
       finally { clearTimeout(timer); }
       availability.textContent = aiAvailable ? 'Asistente IA disponible' : 'Chat IA pendiente de habilitación';
